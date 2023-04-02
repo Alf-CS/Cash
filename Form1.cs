@@ -4,6 +4,10 @@ namespace Cash
 {
     public partial class Form1 : Form
     {
+        Guy Joe;
+        Guy Bob;
+        int BankCash = 100;
+
         public Form1()
         {
             InitializeComponent();
@@ -16,7 +20,7 @@ namespace Cash
             lblBankCash.Text = "En el banco quedan " + BankCash + "euros";
 
         }
-
+        /*
         public static void main(String[] args)
         {
 
@@ -31,7 +35,7 @@ namespace Cash
 
 
         }
-
+        */
         private void btnJoeReceiveCash_Click(object sender, EventArgs e)
         {
             if (BankCash > 10)
@@ -43,26 +47,8 @@ namespace Cash
         }
 
 
-        internal class Guy
-        {
-            static int BankCash = 100;
-
-            String Name = "";
-            String Apellido = "";
-            int Cash = 0;
 
 
-            public void GiveCash(int money)
-            {
 
-            }
-
-            public void ReceiveCash(int money)
-            {
-
-            }
-
-
-        }
     }
 }
