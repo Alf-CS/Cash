@@ -82,6 +82,7 @@
             this.btnBobGiveCash.TabIndex = 4;
             this.btnBobGiveCash.Text = "Recibir 5 € de Bob";
             this.btnBobGiveCash.UseVisualStyleBackColor = true;
+            this.btnBobGiveCash.Click += new System.EventHandler(this.btnBobGiveCash_Click);
             // 
             // btnJoeGiveBob
             // 
@@ -91,6 +92,7 @@
             this.btnJoeGiveBob.TabIndex = 5;
             this.btnJoeGiveBob.Text = "Joe da 10 € a Bob";
             this.btnJoeGiveBob.UseVisualStyleBackColor = true;
+            this.btnJoeGiveBob.Visible = false;
             // 
             // btnBobGiveJoe
             // 
@@ -101,6 +103,8 @@
             this.btnBobGiveJoe.TabIndex = 6;
             this.btnBobGiveJoe.Text = "Bob da 5 € a Joe";
             this.btnBobGiveJoe.UseVisualStyleBackColor = true;
+            this.btnBobGiveJoe.Visible = false;
+            this.btnBobGiveJoe.Click += new System.EventHandler(this.btnBobGiveJoe_Click);
             // 
             // Form1
             // 
@@ -130,5 +134,6 @@
         private Button btnBobGiveCash;
         private Button btnJoeGiveBob;
         private Button btnBobGiveJoe;
+
     }
 }

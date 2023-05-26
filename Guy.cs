@@ -1,31 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Cash
 {
-
-    
     internal class Guy
     {
 
-            int BankCash = 100;
-
-            public String Name = "";
-            protected String Apellido = "";
+            // static int BankCash = 100;  // Variable accesible a Joe y Bob
+            public string Name = "";
+            protected string Surname = "";
             public int Cash = 0;
 
+        public Guy(string Name, int Cash)
+        {
+            this.Name = Name;
+            this.Cash = Cash;
+        }
 
-            public void GiveCash(int money)
-            {
+        public string getName()
+        {
+            return Name;
+        }
 
-            }
-
-            public void ReceiveCash(int money)
-            {
-
-            }
+        public int getCash()
+        {
+            return this.Cash;
+        }
+        public void setCash(int NewCash) {
+        this.Cash= NewCash;
+        }
     }
 }
